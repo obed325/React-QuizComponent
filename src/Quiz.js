@@ -11,10 +11,11 @@ class Quiz extends Component {
     render(){
         return (
             <div>
-                <QuizQuestion>
+                <QuizQuestion quiz_question={quizData.quiz_questions
+                [this.state.quiz_position -1]}/>
 
-                    {quizData.quiz_questions[-1].QuizQuestion}
-                    {quizData.quiz_questions[0].instruction_text}
+                    {/* {quizData.quiz_questions[-1].QuizQuestion}
+                    {quizData.quiz_questions[0].instruction_text} */}
                 </QuizQuestion>
             </div>
         )
